@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<!-- render theo hướng khai báo -->
+  <div id="app">
+    {{ message }}
+  </div>
+
+  <div id="app-2">
+    <span v-bind:title="message">
+        Rê chuột lên đây một vài giây để xem thuộc tính `title` được bind!
+    </span>
+  </div>
+
+<!-- điều kiện và vòng lặp -->
+  <div id="app-3">
+    <span v-if="seen">Thoắt ẩn thoắt hiện</span>
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div>
+
+<!---->
+
+
+  <script type="text/javascript" src="myVue.js"></script>
+</body>
+</html>
